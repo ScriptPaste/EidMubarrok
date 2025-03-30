@@ -1,9 +1,5 @@
-// Smooth scrolling for anchor links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
-});
+let text = document.getElementById('text');
+let treeLeft = document.getElementById('tree-left');
+let treeRight = document.getElementById('tree-right');
+let gateLeft = document.getElementById('gate-left');
+let gateRight = document.getElementById('gate-right');
