@@ -1,49 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+/* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body {
-    background: black;
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
+body, html {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
 }
 
-.navigation {
-    position: absolute;
-    top: 0;
-    left: 50;
-    width: 100%;
-    padding: 30px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+/* Parallax Header */
+.parallax-header {
+  height: 100vh;
+  background-image: url('images/header-bg.jpg'); /* Ganti dengan gambar Anda */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
 }
 
-.section1, .section2 {
-    width: 100%;
-    min-height: 100vh;
-    position: relative;
+.parallax-header h1 {
+  font-size: 4rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-.section2 {
-    .background: black;
+/* Content Sections */
+.content {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f4f4f4;
 }
 
-.text {
-    top: 30%;
-    left: 50%;
-    position: absolute;
-    font-family: 'Frankin Gothic Heavy';
-    font-size: 15vw;
-    color: white;
-    text-shadow: 2px 2px 5px (0,0,0,0.3),
-        5px 5px 70px (255,255,255,0.5);
-    transform: scale(1,1,1) translate(-50%, 10%);
+.content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Parallax Section */
+.parallax-section {
+  height: 100vh;
+  background-image: url('images/parallax-bg.jpg'); /* Ganti dengan gambar Anda */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.parallax-section h2 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
 }
