@@ -4,7 +4,74 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Parallax Scrolling Website</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* Parallax Header */
+    .parallax-header {
+      height: 100vh;
+      background: url('images/header-bg.jpg') center/cover fixed; /* Gambar latar belakang */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    .parallax-header h1 {
+      font-size: 3rem;
+    }
+
+    /* Content Sections */
+    .content {
+      padding: 40px 20px;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+
+    .content h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    .content p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    /* Parallax Section */
+    .parallax-section {
+      height: 100vh;
+      background: url('images/parallax-bg.jpg') center/cover fixed; /* Gambar latar belakang */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    .parallax-section h2 {
+      font-size: 2.5rem;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
 </head>
 <body>
   <!-- Section 1: Header -->
@@ -33,8 +100,6 @@
   <footer>
     <p>&copy; 2023 Parallax Website. Hak Cipta Dilindungi.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
 
