@@ -15,58 +15,48 @@ body, html {
 /* Parallax Header */
 .parallax-header {
   height: 100vh;
-  background-image: url('images/header-bg.jpg'); /* Ganti dengan gambar Anda */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url('images/header-bg.jpg') center/cover fixed; /* Gambar latar belakang */
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .parallax-header h1 {
-  font-size: 4rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  font-size: 3rem;
 }
 
 /* Content Sections */
 .content {
-  padding: 60px 20px;
+  padding: 40px 20px;
   text-align: center;
-  background-color: #f4f4f4;
+  background-color: #f9f9f9;
 }
 
 .content h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  margin-bottom: 15px;
 }
 
 .content p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
 /* Parallax Section */
 .parallax-section {
   height: 100vh;
-  background-image: url('images/parallax-bg.jpg'); /* Ganti dengan gambar Anda */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url('images/parallax-bg.jpg') center/cover fixed; /* Gambar latar belakang */
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  text-align: center;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .parallax-section h2 {
-  font-size: 3rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  font-size: 2.5rem;
 }
 
 /* Footer */
@@ -74,5 +64,5 @@ footer {
   background-color: #333;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 15px;
 }
